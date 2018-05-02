@@ -5,12 +5,12 @@
 source("0_Functions.R")
 
 #This will take a few minutes to run
-lego_mosaic <- readJPEG("Images/goldengirls.jpg") %>% 
-  scale_image(48) %>% 
+lego_mosaic <- readJPEG("Images/15jul.jpg") %>% 
+  scale_image(64) %>% 
   legoize() %>% 
   collect_bricks() 
 
-lego_mosaic %>% display_set("Golden Girls!")
+lego_mosaic %>% display_set("")
 
 #Get summary of pieces... could probably clean this up
 pieces <- lego_mosaic %>% 
