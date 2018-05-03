@@ -5,8 +5,8 @@
 source("0_Functions.R")
 
 #This will take a few minutes to run
-lego_mosaic <- readJPEG("Images/15jul.jpg") %>% 
-  scale_image(64) %>% 
+lego_mosaic <- readJPEG("Images/gecrc.jpg") %>% 
+  scale_image(72) %>% 
   legoize() %>% 
   collect_bricks() 
 
